@@ -9,11 +9,11 @@ function addTwo(n1, n2) {
 }
 
 function multiply(n1, n2) {
-	return n1 * n2;
+  return n1 * n2;
 }
 
 function divide(n1, n2) {
-	return n1 / n2;
+  return n1 / n2;
 }
 
 function myReverseFunction(string){
@@ -27,7 +27,6 @@ function myReverseFunction(string){
 
 function findLongestWord(str) {
   var strSplit = str.split(' ');
-  console.log(strSplit)
   var longestWordLength = 0;
   var longestWord = "";
 
