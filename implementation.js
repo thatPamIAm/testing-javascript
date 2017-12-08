@@ -30,32 +30,32 @@ function findLongestWord(str) {
   var longestWordLength = 0;
   var longestWord = "";
 
-  for(var i = 0; i < strSplit.length; i++) {
-    if(strSplit[i].length > longestWordLength){
+  for (var i = 0; i < strSplit.length; i++) {
+    if (strSplit[i].length > longestWordLength){
       longestWordLength = strSplit[i].length;
-      longestWord = strSplit[i]
+      longestWord = strSplit[i];
      }
   }
   return longestWord;
 }
 
 function convertTime(minutes) {
-   var hours = Math.floor(minutes / 60)
-   var convertedMinutes = minutes - (hours * 60)
+   var hours = Math.floor(minutes / 60);
+   var convertedMinutes = minutes - (hours * 60);
   
-  if(minutes < 10){
+  if (minutes < 10) {
     return '0:0' + minutes;
   } else if (minutes >= 10 && minutes < 60){
    return '0:' + minutes;
   } else if (minutes > 60 && convertedMinutes < 10) {
-   return hours + ":0" + convertedMinutes
+   return hours + ":0" + convertedMinutes;
   } else {
-    return hours + ":" + convertedMinutes
+    return hours + ":" + convertedMinutes;
   }
 }
 
 function fizzBuzz(n) {
-  if(n % 5 === 0 && n % 3 === 0) {
+  if (n % 5 === 0 && n % 3 === 0) {
       return 'FizzBuzz';
     } else if ( n % 3 === 0) {
       return 'Fizz';
